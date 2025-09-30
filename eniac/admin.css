@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+header {
+  background-color: #0056a6;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0;
+}
+
+
+h3 {
+  font-size: 22px;   
+  font-weight: bold; 
+  color: #333;       
+  margin-bottom: 10px;
+}
+
+
+.nav {
+  padding: 10px 20px;
+}
+
+.searchNav {
+  display: flex;
+  justify-content: space-between;
+  gap: 80px;
+  align-items: center;
+}
+
+header .logo {
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.search-container {
+  flex: 1;
+  margin: 0 20px;
+  display: flex;
+  align-items: center;
+}
+
+.search-container input {
+  width: 100%;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 3px;
+}
+
+.search-container input:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.search-container button {
+  background-color: #ced8eb;
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  border: none;
+  padding: 4px 8px;
+  margin-left: 2px;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.search-container button:hover{
+  background-color: #e0ebff;
+}
+
+.navigation {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 10px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #ccc;
+}
+
+
+h2.title {
+  text-align: center;
+  margin: 30px 0 20px 40px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 0 40px;
+  margin-bottom: 40px;
+}
+
+.admin-card {
+  background: white;
+  border-radius: 6px;
+  padding: 20px;
+  box-shadow: 0 0 3px rgba(0,0,0,0.1);
+}
+
+.admin-card h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.admin-card ul {
+  list-style: none;
+}
+
+.admin-card ul li {
+  font-size: 14px;
+  margin-bottom: 6px;
+  cursor: pointer;
+}
+
+  a:hover {
+  color: #0056a6;
+  
+}
+
+a{
+  text-decoration: none;
+  color:  #333;
+}
+

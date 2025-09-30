@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Catálogo - ENIAC</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <nav class="searchNav nav">
+      <div class="logo">ENIAC</div>
+      <div class="search-container">
+        <input id="buscar" type="text" placeholder="Buscar...">
+        <button id="buscarBtn">🔍</button>
+      </div>
+    </nav>
+
+    <nav class="navigation nav">
+      <a href="index.html">Home</a>
+      <a href="usuario.html">Minha Conta</a>
+      <a href="admin.html">Administrador</a>
+      <a href="checkout.html">Carrinho / Checkout</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section id="catalog" class="catalog">
+      <!-- Produtos serão renderizados aqui -->
+    </section>
+
+    <aside class="summary">
+      <h2>Resumo</h2>
+      <p><span>Subtotal:</span> <span id="subtotal">R$ 0,00</span></p>
+      <p><span>Desconto:</span> <span id="desconto">R$ 0,00</span></p>
+      <p><strong>Total:</strong> <strong id="total">R$ 0,00</strong></p>
+      <button id="goCheckout" class="checkout-btn">Finalizar compra</button>
+    </aside>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

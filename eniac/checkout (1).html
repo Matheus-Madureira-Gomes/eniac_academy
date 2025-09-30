@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Finalizar Compra</title>
+  <link rel="stylesheet" href="checkoutStyle.css">
+</head>
+<body>
+  <header> ... (mesmo header) ... </header>
+
+  <h2 class="title">Finalizar Compra</h2>
+
+  <div class="checkout-container">
+    <div class="checkout-form">
+      <div class="form-box" id="dados-pessoais">
+        <h3>Dados Pessoais 
+          <button id="editar-btn" class="editar-btn">Alterar</button>
+        </h3>
+
+        <div class="dados-view">
+          <!-- será preenchido por checkoutJS -->
+        </div>
+
+        <div class="dados-edit" style="display: none;">
+          <input id="input-nome" type="text" placeholder="Nome Completo">
+          <input id="input-email" type="email" placeholder="E-mail">
+          <input id="input-telefone" type="text" placeholder="Telefone/WhatsApp">
+          <input id="input-endereco" type="text" placeholder="Rua e Número">
+          <button id="salvar-btn" class="salvar-btn">Salvar</button>
+        </div>
+      </div>
+
+      <div class="entrega">
+        <h3>Entrega ou Retirada</h3>
+        <label><input type="radio" name="tipo-entrega" value="entrega"> 📦 Entregar no endereço informado</label>
+        <label><input type="radio" name="tipo-entrega" value="retirada" checked> 📍 Retirar na faculdade</label>
+      </div>
+
+      <div class="forma-pagamento">
+        <h3>Forma de Pagamento</h3>
+        <label><input type="radio" name="pagamento" value="pix" checked> Pix</label>
+        <label><input type="radio" name="pagamento" value="cartao"> Cartão (Crédito/Débito)</label>
+        <label><input type="radio" name="pagamento" value="dinheiro"> Dinheiro na retirada/entrega</label>
+      </div>
+    </div>
+
+    <div class="checkout-summary">
+      <h3>Resumo do Pedido</h3>
+      <div id="items-list"></div>
+      <p><span>Subtotal:</span><span id="summary-subtotal">R$ 0,00</span></p>
+      <p><span>Frete:</span><span id="summary-frete">R$ 0,00</span></p>
+      <p><span>Desconto:</span><span id="summary-desconto">R$ 0,00</span></p>
+      <p><strong>Total Final:</strong><strong id="summary-total">R$ 0,00</strong></p>
+      <button class="confirm-btn" id="confirm-btn">CONFIRMAR COMPRA</button>
+    </div>
+  </div>
+
+  <script src="checkoutJS.js"></script>
+</body>
+</html>
